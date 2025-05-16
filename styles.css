@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:"Courgette";
+}
+
+:root {
+    --pureblack: #000;
+    --offwhitegray: #F2F2F2;
+}
+/* The --pureblack is to indicate a set colour for a style. Assinging this tag allows you to change it in 1 place to affect the whole site.  */
+
+.btn.btn-pureblack {
+    background-color: var(--pureblack);
+    border-color:var(--offwhitegray);
+    color:white;
+}
+
+/* to link to the root colours use the format var(--listed colour name) */
+
+.btn.btn-pureblack:hover {
+    background-color: var(--offwhitegray);
+    border-color:var(--pureblack);
+    color:white;
+}
+
+.nav-logo {
+    height:70px;
+}
+
+.login-button {
+    margin:10px;
+}
+
+#hero-banner {
+    background: linear-gradient(#00000598, #000004b2), url(/images/harold-wijnholds-7mL9PbP8lFA-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+} 
+
+.mission-statement {
+    background-color: rgba(211, 211, 211, 0.418);
+    margin:0%
+}
+
+hr {
+    width:80%;
+    height: 7px;
+    Margin-left:10%;
+    background-color: rgb(151, 151, 151);
+    border: solid 2px;
+    color:rgb(151, 151, 151);
+    border-radius:25px;
+}
+
+.photographer {
+    transition: transform 0.3s ease-in-out;
+}
+
+.photographer:hover {
+    transform: scale(1.05);
+}
+
+.loc-img {
+    height:500px;
+    object-fit:cover;
+}
+
+.carousel-inner img {
+    max-height: 100vh;
+    object-fit:contain;
+}
+
+.footer {
+    padding: 85px 0;
+}
+
+.single-content {
+    padding: 115px 0;
+    text-align: center;
+}
+
+.single-box {
+    line-height: 1.9;
+}
+
+.single-box h3 {
+    font-size:16px;
+    font-weight:700;
+
+}
+
+.single-box .card-area i {
+    font-size:20px;
+    margin-right: 10px;
+}
+
+.single-box ul {
+    list-style: none;
+    padding:0;
+}
+
+.single-box ul li a {
+    text-decoration: none;
+    line-height: 2.5;
+    font-weight: 100;
+}
+
+.single-box h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#basic-addon2 {
+    background: rgba(102, 101, 101, 0.616);
+    color: #020101;
+}
+
+.socials i {
+    font-size: 18px;
+    margin-right:15px;
+    background-color:#000;
+}
+
+.footer-logo {
+    width:450px;
+    margin-top:10px;
+}
+
+footer {
+    margin-top:15px;
+}
+
+.photographer-card {
+    margin:50px;
+    background-color: rgba(211, 211, 211, 0.418);
+    border-bottom: 30px;
+    height: 200px;
+}
+
+.card-photo {
+    width:100%;
+    border-radius: .7em;
+    height:400px;
+    object-fit:cover;
+}
+
+.blog-card {
+    margin:50px;
+    background-color: rgba(211, 211, 211, 0.418);
+    border-bottom: 30px;
+    height: 200px;
+}
+
+.blog-photo {
+    width: 100%;
+    border-radius: .7em;
+    height:255px;
+    object-fit:cover;
+}
+
+.gallery-button {
+    padding: 0.3em 0.5em;
+    background-color:#000;
+    border-color:#000;
+    margin-top:30px;
+}
+
+.learn {
+    background-color: rgba(211, 211, 211, 0.418);
+}
+
+.blog-button {
+    background-color:#000;
+    border-color:#000;
+}
+
+.blog-heading {
+    margin-left: 50px;
+}
+
+.blog-body {
+    /*
+    margin-top:15px;
+    margin-left:10px;
+    */
+    margin:30px;
+}
+
+.post-section {
+    text-align:right;
+    margin-right:50px;
+    font-size:25px;
+}
+
+.form-control {
+    background-color: rgba(211, 211, 211, 0.418);
+}
+
+.socials {
+    margin-top: 50px;
+    background-color: rgba(211, 211, 211, 0.418);
+}
+
+
+.contact-socials {
+    width:100%;
+    background-color: rgba(211, 211, 211, 0.418);
+}
+
+.contact-col {
+    width:400px;
+    margin:15px;
+    background-color: rgba(211, 211, 211, 0.418);
+}
+
+.image-gallery {
+    background-color: rgba(211, 211, 211, 0.418);
+    border-radius:25px;
+    margin-bottom:50px;
+    width:75%;
+}
+
+.button-gallery {
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.button-gallery:hover {
+    background-color: rgba(211, 211, 211, 0.418);
+    color:#000;
+}
+
+.gallery-box img {
+    margin-top:20px;
+    border-radius:25px 25px;
+    object-fit:cover;
+    height:350px;
+}
+
+/* lock the footer */
+
+
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1;
+  }
+
+  footer {
+    background-color: #f8f9fa; /* Optional: light background for visibility */
+    padding: 20px 0;
+  }
+
+
+
+@media (max-width: 767px) {
+    .single-box {
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+    .single-box {
+        margin-bottom: 50px;
+    }
+}
